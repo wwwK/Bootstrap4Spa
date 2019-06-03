@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ricardo</title>
+    <!-- <link rel="stylesheet" href="media/css/audioplayer.css" /> -->
+
+    <link rel="stylesheet" href="bs4/css/bootstrap.css">
+    <!-- 阿里开源图标 class -->
+    <!-- <link rel="stylesheet" href="css/iconfont.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/icon.css"> -->
+    <link rel="stylesheet" href="icon/font_wp03okwmj3/iconfont.css">
+    <!-- <link href="bs4/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet"> -->
+    <!-- <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet"> -->
+    <!-- <script src="js/jquery.slim.min.js"></script> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 阿里开源图标svg -->
+    <!-- <script src="js/iconfont.js"></script> -->
+    <script src="icon/font_wp03okwmj3/iconfont.js"></script>
+    <!-- <script src="css/font_saq6lc6ol0o/iconfont.js"></script> -->
+
+    <!-- 图片生成 -->
+    <script src="js/holder.js"></script>
+    <!-- feather字体 -->
+    <!-- <script src="https://cdn.bootcss.com/feather-icons/4.21.0/feather.js"> </script> -->
+    <style>
+        /* .icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+            cursor: pointer;
+            color: #007bff;
+        }
+        .BgMusic{
+            position: fixed;
+            right: 30px;
+            top: 10px;
+            width:50px;
+            height: 50px;
+            background-image: url(icon/Music.png);
+            background-size: 100%;
+            cursor: pointer;
+        }
+        .BgMusic:hover{
+            -moz-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="BgMusic">
+        <audio src="media/ALittleStory.mp3" loop autoplay id="Music"></audio>
+    </div>
+    <div class="container mainCont bg-cont">
+        <!-- <img data-src="holder.js/13px150?text=头像" alt="" class="HeaderImg img-thumbnail" style="display:inline-block;">
+        <img data-src="holder.js/86px150?text=标题图片" alt="" class="HeaderImg" style="display:inline-block;"> -->
+
+        <!-- 导航 -->
+        <!-- <ul class="nav  justify-content-center" id="myTab" role="tablist">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                    aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    aria-controls="profile" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                    aria-controls="contact" aria-selected="false">Contact</a>
+            </li>
+        </ul> -->
+        <!-- 导航内容 -->
+        <!-- <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Raw
+                denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+                keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip
+                placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                11111111111111111
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Raw denim
+                    you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher
+                    retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                    Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
+                    voluptate nisi qui.222222222222222222222</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Raw denim
+                    you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher
+                    retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                    Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
+                    voluptate nisi qui.</div>
+            </div> -->
+
+
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> -->
+        <!-- 个人信息栏 -->
+        <div class="collapse show bg-cont" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="row col-sm-8 col-md-7 py-4">
+                        <div class="col-md-4">
+                            <!-- <h4 class="text-info  ">关于我</h4> -->
+                            <img data-src="holder.js/150x160?text=标题图片" alt="" class="HeaderImg img-thumbnail"
+                                style="display:inline-block; height: 150px;" data-toggle="Ricardo_Img"
+                                data-placement="right" title="如果说帅是一种罪，那我简直就是死刑">
+                        </div>
+                        <div class="col-md-8">
+
+                            <!-- <img data-src="holder.js/86px150?text=标题图片" alt="" class="HeaderImg" style="display:inline-block;"> -->
+                            <p class="text-secondary ">
+                                指尖，拥有改变世界的力量！
+
+                            </p>
+                            <!-- <div class="row audio">
+
+                                <div class="progress col-md-6">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated rounded"
+                                        role="progressbar" style="width: 40%" aria-valuenow="10" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                                <input type="range" class="custom-range" id="customRange1">
+                            </div> -->
+                            <!-- <i data-feather="play"></i>
+                            <span class="iconfont icon-play-circle"></span>
+                            <i data-feather="circle"></i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-play-circle"></use>
+                              </svg> -->
+
+                        </div>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-secondary">联系方式</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-secondary" data-toggle="QQ" title="扫码加我"
+                                    data-trigger="focus">QQ：1131308355</a></li>
+                            <li><a href="#" class="text-secondary" data-toggle="Wechat" title="扫码加我"
+                                    data-trigger="focus">Wechat：m1131308355</a></li>
+                            <li><a href="#" class="text-secondary">Email：1131308355@qq.com</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 个人信息栏结束 -->
+        </div>
+        <!-- 导航 -->
+        <ul class="nav nav-pills mb-3  navbar navbar-light bg-light " id="pills-tab" role="tablist">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler1"
+                aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <a class="navbar-brand" href="#">Ricardo</a>
+            <!-- <div class="collapse navbar-collapse" id="navbarToggler1" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation"> -->
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">主页</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-light text-primary" href="http://www.uareshy.cn" target="_blank">我的博客</a>
+            </li>
+
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">搜索</button>
+            </form>
+            <li class="nav-item">
+                <button type="button" class="btn btn-light float-right text-primary" data-toggle="modal"
+                    data-target="#exampleModal" data-whatever="@Ricardo">登&nbsp;&nbsp;&nbsp;录
+                </button>
+                <!-- 登录框开始 -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Longin</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">用户名:</label>
+                                        <input type="text" class="form-control" id="recipient-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">密码:</label>
+                                        <input type="password" class="form-control" id="password">
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button> -->
+                                <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="top"
+                                    title="功能未开放">注册</button>
+                                <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="top"
+                                    title="功能未开放">登录</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 登录框结束 -->
+
+            </li>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" data-placement="right"
+                title="点击可以收缩上部内容o！">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- </div> -->
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+
+            <!-- 导航内容项1 -->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active text-center" id="list-home-list"
+                                data-toggle="list" href="#list-home" role="tab" aria-controls="home">我的主页</a>
+                            <a class="list-group-item list-group-item-action text-center" id="list-article-list" data-toggle="list"
+                                href="#list-article" role="tab" aria-controls="article">博文</a>
+                            <a class="list-group-item list-group-item-action text-center" id="list-whisper-list" data-toggle="list"
+                                href="#list-whisper" role="tab" aria-controls="whisper">我的故乡</a>
+                            <!-- <a class="list-group-item list-group-item-action" id="list-works-list" data-toggle="list"
+                                href="#list-works" role="tab" aria-controls="works">作品/Works</a> -->
+                            <a class="list-group-item list-group-item-action text-center" id="list-message-list" data-toggle="list"
+                                href="#list-message" role="tab" aria-controls="message">留言</a>
+                            <a class="list-group-item list-group-item-action text-center" id="list-about-list" data-toggle="list"
+                                href="#list-about" role="tab" aria-controls="about">关于</a>
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <!-- 主页内容 -->
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- 主页导航内容第一项 -->
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                aria-labelledby="list-home-list">
+
+                                <div class="jumbotron">
+                                    <h1 class="display-4">欢迎 welcome</h1>
+                                    <p class="lead">这是我的个人主页，你可以在这里了解我、联系我。</p>
+                                    <hr class="my-4">
+                                    <p>
+                                        你可以在这里留言，我会看的到的哦~或者添加我的个人联系方式，在右上角。
+                                    </p>
+                                    <a class="btn btn-light btn-lg" href="http://www.uareshy.cn" role="button">了解更多</a>
+                                </div>
+                                <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100"
+                                                data-src="holder.js/100px450?text=头像&bg=#DCDCDC&fg=#808080"
+                                                alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100"
+                                                data-src="holder.js/100px450?text=头像&bg=#DCDCDC&fg=#808080"
+                                                alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100"
+                                                data-src="holder.js/100px450?text=头像&bg=#DCDCDC&fg=#808080"
+                                                alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div> -->
+
+                            </div>
+                            <!-- 主页导航内容第二项 -->
+                            <div class="tab-pane fade" id="list-article" role="tabpanel"
+                                aria-labelledby="list-article-list">
+                                <!--  -->
+                                <div class="card text-center">
+                                    <div class="card-header bg-light">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                                    role="tab" aria-controls="home" aria-selected="true">全部</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                                    role="tab" aria-controls="profile" aria-selected="false">前端开发</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact"
+                                                    role="tab" aria-controls="contact" aria-selected="false">游戏开发</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- 文章内容第一项 -->
+
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                            aria-labelledby="home-tab">
+                                            <!-- 文章内容 -->
+                                            <div class="card-body ">
+                                                <div class="card text-center">
+                                                    <h5 class="card-header">标题</h5>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">作者</h5>
+                                                        <p class="card-text ">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                                                        <footer class="blockquote-footer">发布时间：<cite
+                                                                title="Source Title">2019年5月19日 19:00</cite></footer>
+                                                        <a href="#" class="btn btn-light text-success">阅读</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card text-center mt-2">
+                                                    <h5 class="card-header">标题</h5>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">作者</h5>
+                                                        <p class="card-text">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                                                        <footer class="blockquote-footer">发布时间：<cite
+                                                                title="Source Title">2019年5月19日 19:00</cite></footer>
+                                                        <a href="#" class="btn btn-light text-success">阅读</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card text-center mt-2">
+                                                    <h5 class="card-header">标题</h5>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">作者</h5>
+                                                        <p class="card-text">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                                                        <footer class="blockquote-footer">发布时间：<cite
+                                                                title="Source Title">2019年5月19日 19:00</cite></footer>
+                                                        <a href="#" class="btn btn-light text-success">阅读</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="profile" role="tabpanel"
+                                            aria-labelledby="profile-tab">
+                                            <!-- 文章内容 -->
+                                            <div class="card-body ">
+
+                                                <div class="card text-center mt-2">
+                                                    <h5 class="card-header">标题</h5>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">作者</h5>
+                                                        <p class="card-text ">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                                                        <footer class="blockquote-footer">发布时间：<cite
+                                                                title="Source Title">2019年5月19日 19:00</cite></footer>
+                                                        <a href="#" class="btn btn-light text-success">阅读</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card text-center mt-2">
+                                                    <h5 class="card-header">标题</h5>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">作者</h5>
+                                                        <p class="card-text">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                                                        <footer class="blockquote-footer">发布时间：<cite
+                                                                title="Source Title">2019年5月19日 19:00</cite></footer>
+                                                        <a href="#" class="btn btn-light text-success">阅读</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card text-center mt-2">
+                                                    <h5 class="card-header">标题</h5>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">作者</h5>
+                                                        <p class="card-text">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                                                        <footer class="blockquote-footer">发布时间：<cite
+                                                                title="Source Title">2019年5月19日 19:00</cite></footer>
+                                                        <a href="#" class="btn btn-light text-success">阅读</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 第三项 -->
+                                        <div class="tab-pane fade" id="contact" role="tabpanel"
+                                            aria-labelledby="contact-tab">
+                                            <div class="card-body ">
+
+                                                <div class="card text-center mt-2">
+                                                    <h5 class="card-header">标题</h5>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">作者</h5>
+                                                        <p class="card-text ">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                                                        <footer class="blockquote-footer">发布时间：<cite
+                                                                title="Source Title">2019年5月19日 19:00</cite></footer>
+                                                        <a href="#" class="btn btn-light text-success">阅读</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card text-center mt-2">
+                                                    <h5 class="card-header">标题</h5>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">作者</h5>
+                                                        <p class="card-text">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                                                        <footer class="blockquote-footer">发布时间：<cite
+                                                                title="Source Title">2019年5月19日 19:00</cite></footer>
+                                                        <a href="#" class="btn btn-light text-success">阅读</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card text-center mt-2">
+                                                    <h5 class="card-header">标题</h5>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">作者</h5>
+                                                        <p class="card-text">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                                                        <footer class="blockquote-footer">发布时间：<cite
+                                                                title="Source Title">2019年5月19日 19:00</cite></footer>
+                                                        <a href="#" class="btn btn-light text-success">阅读</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 文章内容第二项 -->
+
+
+
+                                </div>
+                            </div>
+                            <!-- 主页导航内容第三项 -->
+                            <div class="tab-pane fade" id="list-whisper" role="tabpanel"
+                                aria-labelledby="list-whisper-list">
+
+                                <div class="card-columns">
+                                    <div class="card">
+                                        <img class="card-img-top hometown" src="img/jiaxiang/1.jpg" alt="Card image cap"
+                                            data-toggle="modal" data-target="#exampleModalCenter1">
+                                        <!-- 点击弹出框开始 -->
+                                        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <!-- <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div> -->
+                                                    <div class="modal-body">
+                                                        <img class="card-img-top " src="img/jiaxiang/1.jpg"
+                                                            alt="Card image cap " width="">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-light"
+                                                            data-dismiss="modal">关闭</button>
+                                                        <button type="button" class="btn btn-light">
+                                                            保存
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 点击弹出框结束 -->
+
+                                        <div class="card-body">
+
+                                            <p class="card-text">
+                                                宾阳新城区凤凰湖夜景，虽然宾阳是一个县，却拥有着城市的美景。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top hometown" src="img/jiaxiang/2.jpeg"
+                                            alt="Card image cap" data-toggle="modal" data-target="#exampleModalCenter2">
+                                        <!-- 点击弹出框开始 -->
+                                        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <!-- <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div> -->
+                                                    <div class="modal-body">
+                                                        <img class="card-img-top " src="img/jiaxiang/2.jpeg"
+                                                            alt="Card image cap " width="">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-light"
+                                                            data-dismiss="modal">关闭</button>
+                                                        <button type="button" class="btn btn-light">
+                                                            保存
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                时代广场夜景，美到夜晚，这里就是宾阳人民娱乐的场所，非常热闹！
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top hometown" src="img/jiaxiang/3.jpg" alt="Card image cap"
+                                            data-toggle="modal" data-target="#exampleModalCenter3">
+
+                                        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <!-- <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div> -->
+                                                    <div class="modal-body">
+                                                        <img class="card-img-top " src="img/jiaxiang/3.jpg"
+                                                            alt="Card image cap " width="">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-light"
+                                                            data-dismiss="modal">关闭</button>
+                                                        <button type="button" class="btn btn-light">
+                                                            保存
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <!-- <h5 class="card-title">Card title</h5> -->
+                                            <p class="card-text">
+                                                宾阳美食:酸粉！！！！吃一次你就会彻底爱上它！吃酸粉一定要认准天后宫颜十五酸粉店！
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top hometown" src="img/jiaxiang/4.jpg" alt="Card image cap"
+                                            data-toggle="modal" data-target="#exampleModalCenter4">
+
+                                        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <!-- <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div> -->
+                                                    <div class="modal-body">
+                                                        <img class="card-img-top " src="img/jiaxiang/4.jpg"
+                                                            alt="Card image cap " width="">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-light"
+                                                            data-dismiss="modal">关闭</button>
+                                                        <button type="button" class="btn btn-light">
+                                                            保存
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                宾阳昆仑关旧址，这里曾经是抗日战士们抵抗日军侵略的重要据点。
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <img class="card-img hometown" src="img/jiaxiang/5.jpg" data-toggle="modal"
+                                            data-target="#exampleModalCenter5">
+                                        <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <!-- <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div> -->
+                                                    <div class="modal-body">
+                                                        <img class="card-img-top " src="img/jiaxiang/5.jpg"
+                                                            alt="Card image cap " width="">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-light"
+                                                            data-dismiss="modal">关闭</button>
+                                                        <button type="button" class="btn btn-light">
+                                                            保存
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+
+                                            <p class="card-text">昆仑关：这里记载着烈士英雄们的赫赫战功！</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img hometown" src="img/jiaxiang/6.jpg" data-toggle="modal"
+                                            data-target="#exampleModalCenter6">
+                                        <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <!-- <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div> -->
+                                                    <div class="modal-body">
+                                                        <img class="card-img-top " src="img/jiaxiang/6.jpg"
+                                                            alt="Card image cap " width="">
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-light"
+                                                            data-dismiss="modal">关闭</button>
+                                                        <button type="button" class="btn btn-light">
+                                                            保存
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                宾阳炮龙节：宾阳炮龙节是广西宾阳县独有的一种传统节日，是汉族、壮族文化融合共生的综合性民间节庆，具有鲜明、浓郁的民族色彩。每年农历正月十一举行。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img hometown" src="img/jiaxiang/7.jpg" data-toggle="modal"
+                                            data-target="#exampleModalCenter7">
+                                        <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <!-- <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div> -->
+                                                    <div class="modal-body">
+                                                        <img class="card-img-top " src="img/jiaxiang/7.jpg"
+                                                            alt="Card image cap " width="">
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-light"
+                                                            data-dismiss="modal">关闭</button>
+                                                        <button type="button" class="btn btn-light">
+                                                            保存
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                每到正月十一的夜晚，就是全城狂欢，共度新的一年美好时刻，而炮龙节最让人兴奋的莫过于舞炮龙和炸炮龙。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img hometown" src="img/jiaxiang/8.jpg" data-toggle="modal"
+                                            data-target="#exampleModalCenter8">
+                                        <div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <!-- <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div> -->
+                                                    <div class="modal-body">
+                                                        <img class="card-img-top " src="img/jiaxiang/8.jpg"
+                                                            alt="Card image cap " width="">
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-light"
+                                                            data-dismiss="modal">关闭</button>
+                                                        <button type="button" class="btn btn-light">
+                                                            保存
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                这是我的高中，满满的都是青春的回忆。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img hometown" src="img/jiaxiang/9.jpg" data-toggle="modal"
+                                            data-target="#exampleModalCenter9">
+                                        <div class="modal fade" id="exampleModalCenter9" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <!-- <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div> -->
+                                                    <div class="modal-body">
+                                                        <img class="card-img-top " src="img/jiaxiang/9.jpg"
+                                                            alt="Card image cap " width="">
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-light"
+                                                            data-dismiss="modal">关闭</button>
+                                                        <button type="button" class="btn btn-light">
+                                                            保存
+                                                        </button>
+                                                        <!-- <a href="img/jiaxiang/9.jpg" class="btn btn-light" download='9' target="_blank">保存</a> -->
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                我家乡的稻田艺术，在这里你可以看放到我们家乡人民的劳动的智慧与艺术的结合。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-center">未完待续</p>
+
+                            </div>
+                            <!-- 主页导航内容第四项 -->
+                            <!-- <div class="tab-pane fade" id="list-works" role="tabpanel"
+                                aria-labelledby="list-works-list">
+                                作品
+                            </div> -->
+                            <!-- 主页导航内容第五项 -->
+                            <div class="tab-pane fade" id="list-message" role="tabpanel"
+                                aria-labelledby="list-message-list">
+
+                                <!-- <div class="card">
+                                    <div class="card-header">
+                                        昵称
+                                    </div>
+                                    <div class="card-body">
+                                        <blockquote class="blockquote mb-0">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                                erat a ante.</p>
+                                            <footer class="blockquote-footer">Someone famous in <cite
+                                                    title="Source Title">Source Title</cite></footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        昵称
+                                    </div>
+                                    <div class="card-body">
+                                        <blockquote class="blockquote mb-0">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                                erat a ante.</p>
+                                            <footer class="blockquote-footer">Someone famous in <cite
+                                                    title="Source Title">Source Title</cite></footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        昵称
+                                    </div>
+                                    <div class="card-body">
+                                        <blockquote class="blockquote mb-0">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                                erat a ante.</p>
+                                            <footer class="blockquote-footer">Someone famous in <cite
+                                                    title="Source Title">Source Title</cite></footer>
+                                        </blockquote>
+                                    </div>
+                                </div> -->
+                                <!-- 留言卡片组 -->
+                                <div class="card-columns">
+
+                                    <div class="card border-primary mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">乔布斯
+                                            <span class="badge badge-pill badge-primary align-top float-right" >1</span>
+                                            <svg class="icon float-right" aria-hidden="true" clicktype='0'>
+                                                <use xlink:href="#icon-like">
+                                                
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="card-body text-primary">
+                                            <!-- <h5 class="card-title">Primary card title</h5> -->
+                                            <p class="card-text"> We're here to put a dent in the universe. Otherwise
+                                                why else even be here?
+
+                                                活着就是为了改变世界，难道还有其他原因吗？</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">乔布斯
+                                            <span
+                                                class="badge badge-pill badge-secondary align-top float-right">6</span>
+                                            <svg class="icon float-right" aria-hidden="true" style="color: #6c757d;" clickType=false>
+                                                <use xlink:href="#icon-like">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="card-body text-secondary">
+                                            <!-- <h5 class="card-title">Secondary card title</h5> -->
+                                            <p class="card-text">
+                                                Be a yardstick of quality. Some people aren't used to an environment
+                                                where excellence is expected.
+                                                成为卓越的代名词，很多人并不能适合需要杰出素质的环境。
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card border-success mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">比尔盖茨
+                                            <span class="badge badge-pill badge-success align-top float-right">17</span>
+                                            <svg class="icon float-right" aria-hidden="true" style="color: #6c757d;">
+                                                <use xlink:href="#icon-like">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="card-body text-success">
+                                            <!-- <h5 class="card-title">Success card title</h5> -->
+                                            <p class="card-text">
+                                                伟大的成功靠的不是气力是韧性.社会竞争经常是持久力的竞争,有恒心和毅力的成功者往往成为笑到最后、笑得最好的人.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-danger mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">马云
+                                            <span class="badge badge-pill badge-danger align-top float-right">4</span>
+                                            <svg class="icon float-right" aria-hidden="true" style="color: #dc3545;">
+                                                <use xlink:href="#icon-like">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="card-body text-danger">
+                                            <!-- <h5 class="card-title">Danger card title</h5> -->
+                                            <p class="card-text">
+                                                永远不要跟别人比幸运，我从来没想过我比别人幸运，我也许比他们更有毅力，在最困难的时候，他们熬不住了，我可以多熬一秒钟、两秒钟。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-warning mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">马云
+                                            <span class="badge badge-pill badge-warning align-top float-right">19</span>
+                                            <svg class="icon float-right" aria-hidden="true" style="color: #ffc107 ;">
+                                                <use xlink:href="#icon-like">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="card-body text-warning">
+                                            <!-- <h5 class="card-title">Warning card title</h5> -->
+                                            <p class="card-text">
+                                                我感谢这个变化的时代，我感谢无数人的抱怨，因为在别人抱怨的时候，才是你的机会，只有变换的时代，才是每一个人看清自己有什么要什么该放弃什么的时候。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-info mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">马化腾
+                                            <span class="badge badge-pill badge-info align-top float-right">3</span>
+                                            <svg class="icon float-right" aria-hidden="true" style="color: #17a2b8  ;">
+                                                <use xlink:href="#icon-like">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="card-body text-info">
+                                            <!-- <h5 class="card-title">Info card title</h5> -->
+                                            <p class="card-text">
+                                                我很多年没有写代码了，但做一些主要决策的时候，你要是写过代码，你就知道，主要是系统分析、决策、要做什么，但是你要有技术底，否则不能做判断。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-light mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">MaHuateng
+                                            <span class="badge badge-pill badge-dark align-top float-right">666</span>
+                                            <svg class="icon float-right" aria-hidden="true" style="color: #343a40  ;">
+                                                <use xlink:href="#icon-like">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="card-body">
+                                            <!-- <h5 class="card-title">Light card title</h5> -->
+                                            <p class="card-text">
+                                                不充钱还想变强？开什么玩笑呢？你冲个5w试试？
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">张三
+                                            <span class="badge badge-pill badge-dark align-top float-right">999</span>
+                                            <svg class="icon float-right" aria-hidden="true" style="color: #343a40  ;">
+                                                <use xlink:href="#icon-like">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="card-body text-dark">
+                                            <!-- <h5 class="card-title">Dark card title</h5> -->
+                                            <p class="card-text">
+                                                哥，你真是太帅了，太有才华了，我甘愿为您赴汤蹈火。誓死追随您的脚步。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">路明非
+                                            <span class="badge badge-pill badge-dark align-top float-right">520</span>
+                                            <svg class="icon float-right" aria-hidden="true" style="color: #343a40  ;">
+                                                <use xlink:href="#icon-like">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="card-body text-dark">
+                                            <!-- <h5 class="card-title">Dark card title</h5> -->
+                                            <p class="card-text">
+                                                真的我，大概就是喜欢睡懒觉.打游戏.没事就自己发呆东想西想，每次去报刊都蹭杂志看，喜欢一个人三年都不敢表白的那种......你会觉得这种人生有什么意思么？
+                                                要是我看到这种人我都觉得没意思，可...我就是这种人。自己是棵草自己知道，人家夸你是棵参天大树你也不能信对不对？
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <!-- 留言 -->
+                                <button type="button" class="btn btn-light float-right" data-toggle="modal"
+                                    data-target="#LeavingMsg" data-whatever="@mdo">留&nbsp;&nbsp;&nbsp;言
+                                </button>
+
+                                <div class="modal fade" id="LeavingMsg" tabindex="-1" role="dialog"
+                                    aria-labelledby=LeavingMsgLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">留言给我</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="recipient-name" class="col-form-label">你的姓名:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="message-text" class="col-form-label">留言信息:</label>
+                                                        <textarea class="form-control" id="message-text"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-light"
+                                                    data-dismiss="modal">关闭</button>
+                                                <button type="button" class="btn btn-light">提交留言</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 分页 -->
+
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center btn-group-toggle">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- 关于我 -->
+                            <div class="tab-pane fade" id="list-about" role="tabpanel"
+                                aria-labelledby="list-about-list">
+                                <a href="./Ricardo.pdf" class="btn btn-light mb-3 " target="_blank">
+                                    我的个人简历
+                                </a>
+                                <div class="media border p-3">
+                                    <!-- <img src="https://static.runoob.com/images/mobile-icon.png" alt="John Doe"
+                                        class="mr-3 mt-3 rounded-circle" style="width:60px;"> -->
+                                    <img src="img/head.jpg" alt="John Doe" class=" align-self-start mr-3"
+                                        style="width:60px;">
+                                    <div class="media-body">
+                                        <h4>兴趣爱好</h4>
+                                        <p>街舞popping</p>
+                                        <p>游戏、游戏开发</p>
+                                        <p><del>唱、跳、Rap、篮球</del></p>
+                                        <p>我敲的不是代码，是未来。</p>
+                                    </div>
+
+
+
+                                </div>
+                                <!-- <div class="card " style="width: 18rem;">
+                                        <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Cras justo odio</li>
+                                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item">Vestibulum at eros</li>
+                                        </ul>
+                                    </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航内容项2 -->
+            <!-- <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <strong class="d-inline-block mb-2 text-primary">World</strong>
+                                <h3 class="mb-0">
+                                    <a class="text-dark" href="#">Featured post</a>
+                                </h3>
+                                <div class="mb-1 text-muted">Nov 12</div>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a
+                                    natural lead-in to additional content.
+                                </p>
+                                <a href="#">Continue reading</a>
+                            </div> -->
+            <!-- <svg class="bd-placeholder-img card-img-right flex-auto d-none d-lg-block" width="200"
+                                height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect fill="#55595c" width="100%" height="100%" /><text fill="#eceeef" dy=".3em" x="50%"
+                                    y="50%">Thumbnail</text>
+                            </svg> -->
+            <!-- </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <strong class="d-inline-block mb-2 text-success">Design</strong>
+                                <h3 class="mb-0">
+                                    <a class="text-dark" href="#">Post title</a>
+                                </h3>
+                                <div class="mb-1 text-muted">
+                                    Nov 11
+                                </div>
+                                <p class="card-text mb-auto">
+                                    This is a wider card with supporting text below as a
+                                    natural lead-in to additional content.
+                                </p>
+                                <a href="#">Continue reading</a>
+                            </div> -->
+            <!-- <svg class="bd-placeholder-img card-img-right flex-auto d-none d-lg-block" width="200"
+                                height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect fill="#55595c" width="100%" height="100%" /><text fill="#eceeef" dy=".3em" x="50%"
+                                    y="50%">Thumbnail</text>
+                            </svg> -->
+            <!-- </div>
+                    </div>
+                </div>
+
+            </div> -->
+            <!-- 导航内容项3
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                Raw
+                denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro
+                synth
+                master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher
+                retro
+                keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip
+                placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi
+                qui.
+
+            </div> -->
+        </div>
+
+
+        <!-- 容器结束 -->
+    </div>
+    <footer class=" container border-top bg-light">
+        <p class="text-center text-dark py-2">
+            2018-2019-2学期&nbsp;&nbsp;软件工程&nbsp;&nbsp;陈作军&nbsp;&nbsp;201609601293&nbsp;&nbsp;软件Q167&nbsp;&nbsp;HTML5/CSS3课程设计
+        </p>
+        <p class="text-center text-secondary py-1">©Ricardo 2019 Uareshy.cn &nbsp;&nbsp; 联系邮箱：1131308355@qq.com</p>
+    </footer>
+
+
+
+</body>
+<script src="js/popper.min.js"></script>
+<script src="bs4/js/bootstrap.js"></script>
+
+<!-- <script src="js/bubbleCursor.js"></script> -->
+<!-- <script src="js/template.js"></script>
+<script src="js/snowflakeCursor.js"></script> -->
+
+</html>
+
+<script>
+    $(function () {
+        //联系方式点击提示框
+        $('[data-toggle="QQ"]').popover({
+            //   container: 'body',
+            html: true,
+            content: "<img src='img/qq.jpg' alt='' class='HeaderImg img-thumbnail' width='150'>"
+        })
+        $('[data-toggle="Wechat"]').popover({
+            //   container: 'body',
+            html: true,
+            content: "<img src='img/Wechat.png' alt='' class='HeaderImg img-thumbnail' width='150'>"
+        })
+
+        //鼠标移入提示
+        $(function () {
+            $('[data-toggle="Ricardo_Img"]').tooltip();
+            $('[data-toggle="collapse"]').tooltip();
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="modal"]').tooltip();
+
+        })
+
+        //
+        //背景音乐按钮
+        var audio = $("#Music")[0];
+        // audio.pause();
+        // audio.play();
+        var MusicActive = true;
+        $('.BgMusic').click(function () {
+            if (MusicActive) {
+                audio.pause();
+                MusicActive = false;
+            } else {
+                audio.play();
+                MusicActive = true;
+            }
+        })
+        
+        // $('.icon').clickType = false;
+        $('.icon').click(function () {
+            // console.log(typeof($(this).attr("clicktype")));
+            var clickType = parseInt($(this).attr('clicktype'));//将点击状态转化为数字
+            if (!clickType) {
+                var num = parseInt($(this).prev().html());
+                num++
+                // console.log(++num);
+                $(this).prev().html(num);
+                $(this).attr('clicktype',1);//将点击状态设置为1，确保只能点赞一次
+                // console.log( $(this).clickType);
+                
+            }
+
+        })
+        // audio.volume=0.5;
+    })
+
+</script>
+<!-- <script>
+    feather.replace()
+</script> -->

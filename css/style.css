@@ -1,0 +1,90 @@
+/* .nav-pills .nav-link.active{
+    background-color: #dddddd; 
+} */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* Logo 字体 */
+body{
+	background-image: url(../img/Bg1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 0.8;
+
+}
+/* 手机端改变背景图片 */
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url(../img/Bg1_mobile.jpg);
+    }
+}
+.icon {
+	width: 24px;
+	height: 24px;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+	cursor: pointer;
+	color: #007bff;
+}
+.BgMusic{
+	position: fixed;
+	right: 30px;
+	top: 10px;
+	width:50px;
+	height: 50px;
+	background-image: url(../icon/Music.png);
+	background-size: 100%;
+	cursor: pointer;
+	animation: MusicBtn 3s linear infinite;
+}
+.BgMusic:hover{
+	/* -moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2); */
+}
+.mainCont{
+	/* height: 100%; */
+	min-height: 700px;
+	/* background-color: #e9ecef; */
+	/* opacity: 0.9; */
+}
+.bg-cont{
+	background-color: #eff2f5;
+	/* color: rgb(190, 190, 190); */
+	
+}
+.bg-btn{
+	background-color: #d6dce2;
+
+}
+/* .active{
+	background-color: #e9ecef !important;
+	border: none;
+	color: black !important; 
+} */
+.hometown:hover{
+	position: relative;
+    box-shadow: 0 4px 8px 0 rgba(184, 184, 184, 0.623), 0 6px 20px 0 rgba(180, 180, 180, 0.377);
+    transform:scale(1.1);
+	z-index: 300;
+	cursor: pointer;
+}
+footer{
+	opacity: 0.7;
+
+}
+
+
+@keyframes MusicBtn{
+	form{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}

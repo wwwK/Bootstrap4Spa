@@ -1,0 +1,18 @@
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    cursor: pointer;
+    color: #007bff;
+}
+.icon1 {
+    width: 24px;
+    height: 24px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    cursor: pointer;
+    color: #dc3545;
+}
